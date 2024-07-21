@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Stats from "./Stats";
 import TextArea from "./TextArea";
+import { FACEBOOK_MAX_CHARACTERS, INSTAGRAM_MAX_CHARACTERS } from "./constants";
 
 function App() {
   const [word, setWord] = useState("");
@@ -11,8 +12,8 @@ function App() {
   const stats = {
     numberOfWords: word.split(/\s/).filter((word) => word !== "").length,
     numberOfCharacters: word.length,
-    instagramCharactersLeft: 280 - word.length,
-    facebookCharactersLeft: 2200 - word.length,
+    instagramCharactersLeft: INSTAGRAM_MAX_CHARACTERS - word.length,
+    facebookCharactersLeft: FACEBOOK_MAX_CHARACTERS - word.length,
   };
 
   return (
