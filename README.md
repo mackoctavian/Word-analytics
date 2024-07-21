@@ -2,6 +2,9 @@
 
 Word analytic is a react app to extract analytics about a text inspired by the [the word counter](https://thewordcounter.com) project.
 
+<img width="1058" alt="word" src="https://github.com/user-attachments/assets/1486939d-59fe-4eaa-a141-244eb93fa7bb">
+
+
 > [!Important]
 > The project uses React bootstraped using vite.
 > To Run the project make sure you have nodejs installed in your system then run npm install to install the dependencies
