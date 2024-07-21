@@ -2,13 +2,21 @@ import { useState } from "react";
 import Warning from "./Warning";
 
 export default function TextArea({ word, setWord }) {
-  const [showWarning, setShowWarning] = useState(false);
+  const [warningText, setWarningText] = useState("");
+
   const handleChange = (e) => {
     let newText = e.target.value;
+
+    //Basic validation
     if (newText.includes("<script>")) {
       //alert("No script tag allowed");
       newText = newText.replace("<script>", "");
-      setShowWarning(true);
+      setWarningText("No script tag allowed!");
+    } else if (newText.includes("@")) {
+      setWarningText("No @ symbol allowed");
+      newText = newText.replace("@", "");
+    } else {
+      setWarningText("");
     }
     setWord(newText);
   };
@@ -21,7 +29,7 @@ export default function TextArea({ word, setWord }) {
         spellCheck="false"
         value={word}
       ></textarea>
-      {showWarning && <Warning />}
+      {warningText && <Warning warningText={warningText} />}
     </div>
   );
 }
