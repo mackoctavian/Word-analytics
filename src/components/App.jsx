@@ -1,10 +1,13 @@
 import { useState } from "react";
-import Container from "./Container";
+import Container from "../Container";
 import Footer from "./Footer";
 import Header from "./Header";
 import Stats from "./Stats";
 import TextArea from "./TextArea";
-import { FACEBOOK_MAX_CHARACTERS, INSTAGRAM_MAX_CHARACTERS } from "./constants";
+import {
+  FACEBOOK_MAX_CHARACTERS,
+  INSTAGRAM_MAX_CHARACTERS,
+} from "../lib/constants";
 
 function App() {
   const [word, setWord] = useState("");
