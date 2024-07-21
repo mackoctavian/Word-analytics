@@ -1,8 +1,16 @@
-# React + Vite
+# WORD ANALYTICS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Word analytic is a react app to extract analytics about a text inspired by the [the word counter](https://thewordcounter.com) project.
 
-Currently, two official plugins are available:
+> [!Important]
+> The project uses React bootstraped using vite.
+> To Run the project make sure you have nodejs installed in your system then run npm install to install the dependencies
+> And run development server by running npm run dev in your terminal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features of Word Analytics
+
+1. Counts every character of the typed text
+2. Counts the number of words available in a given text
+3. Compares the given text to the limit of characters required by an instagram post
+4. Compares the given text to the limit of characters required by a facebook post
+5. Rich user interface
